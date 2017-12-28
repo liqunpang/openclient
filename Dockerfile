@@ -3,7 +3,7 @@
 # Author: LiQun
 
 # use a ubuntu base image from local registry
-FROM imac.cn.ibm.com:5000/sshd
+FROM ubuntu
 
 # set maintainer
 MAINTAINER docker_user "liqun@cn.ibm.com"
