@@ -8,4 +8,4 @@ FROM imac.cn.ibm.com:5000/sshd
 # set maintainer
 MAINTAINER docker_user "liqun@cn.ibm.com"
 
-RUN uname -a
+RUN /bin/bash/uname -a
