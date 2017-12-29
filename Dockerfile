@@ -8,4 +8,4 @@ FROM imac.cn.ibm.com:5000/sshd
 # set maintainer
 MAINTAINER liqun
 
-RUN /bin/bash/uname -a
+#RUN /bin/bash/uname -a
