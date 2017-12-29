@@ -6,6 +6,6 @@
 FROM imac.cn.ibm.com:5000/sshd
 
 # set maintainer
-MAINTAINER liqun@cn.ibm.com
+MAINTAINER liqun
 
 RUN /bin/bash/uname -a
