@@ -1,5 +1,9 @@
 pipeline {
-    agent { dockerfile true }
+    agent { dockerfile true
+      environment{
+        PATH="usr/local/bin:$PATH"
+      }
+    }
     stages {
         stage('Test') {
             steps {
