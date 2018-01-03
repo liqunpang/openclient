@@ -1,7 +1,12 @@
 pipeline {
-    agent {
-       /usr/local/bin/docker { image 'node:7-alpine' }
-    }
+  stages {
+      stage('Test') {
+          steps {
+              sh 'echo $PATH; which docker ;sleep 50000'
+          }
+      }
+  }
+
 
     stages {
         stage('Test') {
