@@ -1,13 +1,13 @@
 pipeline {
     agent {
-       docker {image 'ubuntu'}
+       docker { image 'node:7-alpine' }
+       }
     }
 
     stages {
         stage('Test') {
             steps {
                 sh 'node --version'
-                sh 'svn --version'
             }
         }
     }
