@@ -9,7 +9,8 @@ pipeline {
       }
   }
 
-  stage('Front-end') {
+  stages {
+        stage('Front-end') {
             agent {
                 docker { image 'node:7-alpine' }
             }
@@ -17,5 +18,6 @@ pipeline {
                 sh 'node --version'
             }
         }
+    }
 
 }
