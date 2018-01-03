@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Test') {
         steps {
-            sh 'env; sleep 60; cat ./script.sh;'
+            sh 'env; whoami; pwd; sleep 69; cat /script.sh; '
         }
     }
     stage('Front-end') {
