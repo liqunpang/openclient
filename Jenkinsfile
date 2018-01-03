@@ -1,5 +1,7 @@
 pipeline {
-    agent { dockerfile true }
+    agent {
+       docker {imgae 'ubuntu'}
+    }
 
     stages {
         stage('Test') {
