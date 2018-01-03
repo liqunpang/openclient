@@ -4,7 +4,7 @@ pipeline {
   stages {
       stage('Test') {
           steps {
-              sh 'echo $PATH; which docker ;sleep 50000'
+              sh 'env; sleep 25000; docker images; which docker ;'
           }
       }
   }
