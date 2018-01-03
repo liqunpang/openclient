@@ -1,6 +1,6 @@
 pipeline {
     agent {
-       docker {image 'ubuntu'}
+       docker {image 'imac.cn.ibm.com:5000/sshd'}
     }
 
     stages {
