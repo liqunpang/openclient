@@ -1,11 +1,11 @@
 pipeline {
-    agent any
-
+    agent {
+        docker { image 'node:7-alpine' }
+    }
     stages {
-
         stage('Test') {
             steps {
-                sh 'whoami; env; id; /usr/local/bin/docker version;'
+                sh 'node --version'
             }
         }
     }
