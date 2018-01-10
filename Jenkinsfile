@@ -1,6 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'node:7-alpine' }
+    agent { {label 'ubuntu-slave'} dockerfile true }
     }
     stages {
         stage('Test') {
