@@ -1,6 +1,9 @@
 pipeline {
     agent {
-      label 'ubuntu-slave'
+      node {
+        label 'ubuntu-slave'
+        customWorkspace '/home/cicoadmin/jenkins'
+      }
     }
 
     stages {
