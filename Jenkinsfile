@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             agent any
             steps {
-                sh 'whoami; node --version'
+                sh 'whoami; uname -a; node --version'
             }
         }
     }
