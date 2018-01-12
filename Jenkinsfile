@@ -2,13 +2,14 @@ pipeline {
     agent {
       node {
         label 'ubuntu'
-        customWorkspace '/home/cicoadmin/jenkins'
+        customWorkspace '/home/cicoadmin/jenkins
+        docker.build("/home/cicoadmin/jenkins/Dockerfile")
       }
     }
     stages {
       stage('Test'){
          steps {
-            docker.build("/home/cicoadmin/jenkins/dockerfile")
+
             sh 'whoami; uname -a; node --version'
          }
      }
