@@ -8,7 +8,7 @@ pipeline {
     stages {
       stage('Test'){
          steps {
-            docker.build('hello-world')
+            docker.build("/home/cicoadmin/jenkins/dockerfile")
             sh 'whoami; uname -a; node --version'
          }
      }
