@@ -7,7 +7,7 @@ pipeline {
     }
     stages {
       stage('Test'){
-//         agent { dockerfile true }
+         agent { dockerfile true }
          steps {
             sh 'whoami; uname -a; node --version'
          }
