@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    stage('Test') {
+    stages ('Test') {
          steps {
             sh 'whoami; uname -a; node --version'
          }
