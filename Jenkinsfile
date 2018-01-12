@@ -8,7 +8,7 @@ pipeline {
     stages {
       stage('Test'){
          steps {
-            sh 'whoami; uname -a; docker imgaes'
+            sh 'whoami; uname -a; docker images'
          }
      }
    }
