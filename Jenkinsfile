@@ -8,7 +8,7 @@ pipeline {
     stages {
       stage('Test'){
          steps {
-            docker.image('hello-world').withRun()
+            docker.build('hello-world')
             sh 'whoami; uname -a; node --version'
          }
      }
