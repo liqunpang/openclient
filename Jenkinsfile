@@ -20,7 +20,7 @@ pipeline {
           }
         }
          steps {
-            sh 'whoami; uname -a; docker images'
+            sh 'uname -a'
          }
      }
    }
