@@ -1,17 +1,15 @@
 pipeline {
-    agent {
-      node {
-        label 'ubuntu-docker'
-        customWorkspace '/home/cicoadmin/jenkins'
-      }
-    }
+    agent any
 
-    stages {
-        stage('Test') {
-            agent any
-            steps {
-                sh 'whoami; uname -a; node --version'
-            }
+    stages { 'Test'
+        node {
+          label 'ubuntu-slave'
+          customWorkspace '/home/cicoadmin/jenkins'
+        }
+      }
+        docker {
+          image 'maven:3-alpine'
+          lable 'my-defined-label'
         }
     }
 }
