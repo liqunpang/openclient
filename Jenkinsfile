@@ -2,7 +2,7 @@ pipeline {
     agent {
       node {
         label 'ubuntu-docker'
-        customWorkspace '/home/cicoadmin/jenkins
+        customWorkspace '/home/cicoadmin/jenkins'
       }
     }
     stages {
