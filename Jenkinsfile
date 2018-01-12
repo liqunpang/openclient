@@ -2,7 +2,7 @@ pipeline {
     agent {
       node {
         label 'ubuntu'
-        customWorkspace '/home/cicoadmin/jenkins
+        customWorkspace '/home/cicoadmin/jenkins'
         docker.build("/home/cicoadmin/jenkins/Dockerfile")
       }
     }
