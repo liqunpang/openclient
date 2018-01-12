@@ -1,8 +1,13 @@
 pipeline {
-    agent {label 'ubuntu-docker'}
+    agent {
+      node {
+        label 'ubuntu-docker'
+        customWorkspace '/home/cicoadmin/jenkins
+      }
+    }
     stages {
-      agent {dockerfile true}
-      stage('Test') {
+      stage('Test'){
+         agent { dockerfile true }
          steps {
             sh 'whoami; uname -a; node --version'
          }
