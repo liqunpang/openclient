@@ -7,10 +7,12 @@ pipeline {
     }
     stages {
       stage('Test'){
-         agent {
+        agent {
+          docker {
            label 'ubuntu'
            dockerfile true
-         }
+          }
+        }
          steps {
             sh 'whoami; uname -a; docker images'
          }
