@@ -8,8 +8,9 @@ pipeline {
     stages {
       stage('Test'){
         agent {
-          label 'ubuntu'
-          dockerfile true
+          dockerfile {
+            label 'ubuntu'
+          }
         }
          steps {
             sh 'whoami; uname -a; docker images'
