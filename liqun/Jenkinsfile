@@ -1,4 +1,4 @@
 pipeline {
-  angent any
+  angent none
   }
 }
