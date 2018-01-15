@@ -1,4 +1,5 @@
 pipeline {
-  angent none
+  agent none
+  echo "Hello world!"
   }
 }
