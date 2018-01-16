@@ -1,7 +1,8 @@
 pipeline {
-  agent none
-  echo "Hello world!"
-  echo "Can you see the automatic build?"
-  echo "Should use this Jenkinsfile"
+  agent any
+  stages {
+    stage (Example build){
+      echo "Hello world!"
+    }
   }
 }
