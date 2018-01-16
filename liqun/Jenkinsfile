@@ -1,8 +1,8 @@
 pipeline {
   agent any
   stages {
-    stage (Example build){
-      echo "Hello world!"
+    stage ('Example build'){
+      echo 'Hello world!'
     }
   }
 }
