@@ -1,6 +1,5 @@
 pipeline {
   agent none
   echo "Hello world!"
-  echo "try again! and again !"
   }
 }
